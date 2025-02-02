@@ -30,6 +30,7 @@ html {
   font-size: 28px;
   font-weight: 500;
   background-color: #1f1f1f;
+  z-index: 1000;
 }
 
 .nav-links {
@@ -451,4 +452,103 @@ h3 {
     max-width: 800px;
     margin: 0 auto;
   }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 50;
+  top: 0;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  padding: 5px;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+#contact-form button,
+#welcome-btn,
+#services-modal-button {
+  background-color: #0c6c85;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#contact-form button:hover {
+  background-color: #0a5a6d;
+}
+
+@media (min-width: 768px) {
+  .modal-content {
+    width: 60%;
+    max-width: 600px;
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .modal-content {
+    width: 50%;
+    max-width: 700px;
+    padding: 40px;
+  }
+}
+
+#contact-form textarea {
+  height: 150px;
+  max-height: 250px;
+  resize: none;
+  padding: 10px;
+}
+
+#nav-modal-button {
+  background: none;
+}
+
+#services-modal-button {
+  max-width: 250px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
 }
