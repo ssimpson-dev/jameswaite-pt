@@ -11,3 +11,9 @@ document.addEventListener('click', (event) => {
     navLinks.classList.remove('active');
   }
 });
+
+links.forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active"); // Close the menu
+  });
+});
