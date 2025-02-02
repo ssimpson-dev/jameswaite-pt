@@ -315,3 +315,77 @@ div {
   font-style: normal;
   font-weight: 600;
 }
+
+.cta-container {
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 5%;
+  gap: 15px;
+  text-decoration: none;
+}
+
+#cta-subtext {
+  color: #282828;
+}
+
+.cta {
+  font-size: 36px;
+  color: #0c6c85;
+  font-weight: 600;
+}
+
+.icon {
+  height: auto;
+  max-width: 50px;
+  color: #0c6c85;
+  margin: 10px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  text-decoration: none;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #0c6c85;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px;
+  text-decoration: none;
+  min-width: 300px;
+  flex-wrap: wrap;
+}
+
+#email-add {
+  color: #282828;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.contact-container a {
+  text-decoration: none !important;
+}
+
+.contact:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+@media (min-width: 764px) {
+  .contact-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+}
