@@ -15,8 +15,8 @@ Smooth scrolling navigation – Links auto-scroll to sections.
 Secure with HTTPS – SSL enabled for encryption. 
 
 # Tech Stack
-HTML5 – Structured content
-CSS3 – Styling and responsiveness
-JavaScript (Vanilla) – Interactive elements
-GitHub Pages – Free, fast hosting
-DNS Setup via Hostinger – Custom domain configuration
+HTML5 – Structured content.
+CSS3 – Styling and responsiveness.
+JavaScript (Vanilla) – Interactive elements.
+GitHub Pages – Free, fast hosting.
+DNS Setup via Hostinger – Custom domain configuration.
