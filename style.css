@@ -25,20 +25,20 @@ html {
   padding: 25px 10%;
   position: sticky;
   top: 0;
-  background-color: #1f1f1f;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: aliceblue;
   font-size: 28px;
   font-weight: 500;
+  background-color: #1f1f1f;
 }
 
 .nav-links {
   display: none;
   position: absolute;
-  top: 85%;
+  top: 60px;
   right: 0;
-  width: 30%;
-  color: #0c6c85 !important;
+  width: 50%;
+  background-color: rgba(31, 31, 31, 0.95);
   box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.4);
   margin-right: 10px;
   z-index: 1000;
@@ -52,20 +52,20 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
   background-color: #c2c2c2;
 }
 
 .nav-list {
   text-decoration: none;
   margin: 0;
-  font-size: 18px;
+  font-size: 20px;
   border-radius: 5px;
   list-style-type: none;
   padding: 15px;
-  gap: 8px;
+  gap: 25px;
   display: flex;
   flex-direction: column;
+  padding: 25px;
 }
 
 .nav-list a {
@@ -214,6 +214,7 @@ html {
   font-size: 28px;
   padding: 20px;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .services-container {
@@ -223,6 +224,7 @@ html {
   gap: 15px;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 #subheading {
@@ -255,6 +257,7 @@ html {
 
 h2 {
   font-size: 32px;
+  color: #0c6c85;
 }
 
 h3 {
@@ -263,10 +266,6 @@ h3 {
 
 .service-desc {
   font-size: 15px;
-}
-
-div {
-  border: 1px solid red;
 }
 
 @media (min-width: 600px) {
@@ -387,5 +386,69 @@ div {
     flex-direction: row;
     justify-content: center;
     gap: 30px;
+  }
+}
+
+.footer {
+  background-color: #1f1f1f;
+  color: #c2c2c2;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo img {
+  max-width: 300px;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer-contact a {
+  color: #0c6c85;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.footer-social .icon {
+  max-width: 30px;
+  transition: transform 0.2s;
+}
+
+.footer-social .icon:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #777;
+}
+
+@media (min-width: 600px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
   }
 }
